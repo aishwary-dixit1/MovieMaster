@@ -1,3 +1,2 @@
 [build]
-  command = "your-build-command"
   publish = "public"

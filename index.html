@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="movie-box">
+        <div class="movie-block">
+            <div class="movie-container">
+                <div class="movie-title">
+                    <div class="movie-name"><h2 id="movie-name-heading"></h2></div>
+                    <div class="movie-timeline"><h4 id="movie-timeline-heading"></h4></div>
+                </div>
+                <div class="movie-overview">
+                    <div class="movie-poster">
+                        <img id="movie-poster-img" src="" alt="Movie Poster not available">
+                    </div>
+                    <div class="movie-details">
+                        <div class="rating-container">
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="star.png" alt="stars" id="star-img">
+                                    <h2 id="star-ratings"></h2>
+                                </div>
+                                <h4 class="rating-title" id="rating-figure">Rating (799K)</h4>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="rottentomatoes.png" alt="trending" id="star-img">
+                                    <h2 id="rotten-tomatoes"></h2>
+                                </div>
+                                <h4 class="rating-title">Tomatoes </h4>
+                            </div>
+                        </div>
+                        <div class="genre">
+                            <div id="genre-details">
+                            </div>
+                        </div>
+                        <div class="professionals">
+                            <p><span class="highlight">Director:</span> <span id="directors"></span></p>
+                            <p><span class="highlight">Writer:</span> <span id="writers"></span></p>
+                            <p><span class="highlight">Stars:</span> <span id="cast"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-summary">
+                    <p id="movie-description">
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div><h1 class="main-heading">Stories that never ends</h1>
+            </div>
+            <div><h3 class="tag-line">Search for any movie you like</h3></div>
+            <div class="search-bar">
+                <form id="film-name-input">
+                    <input placeholder="Movie name" id="input"/>
+                </form>
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

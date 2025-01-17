@@ -1,8 +1,8 @@
 //const OMDB_api_key = api_key;
 
-const OMDB_api_key = window.env.API_KEY;
+const OMDB_api_key = import.meta.env.VITE_API_KEY;
 
-console.log('API Key available:', !!window.env.API_KEY);
+console.log('API Key length:', import.meta.env.VITE_API_KEY?.length);
 
 const movieBlock = document.querySelector(".movie-block");
 const searchInput = document.querySelector("#input");

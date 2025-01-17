@@ -1,6 +1,5 @@
 //const OMDB_api_key = api_key;
-
-const OMDB_api_key = window.ENV.api_key;
+const OMDB_api_key = process.env.NEXT_PUBLIC_API_KEY;
 
 const movieBlock = document.querySelector(".movie-block");
 const searchInput = document.querySelector("#input");

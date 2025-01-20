@@ -32,7 +32,7 @@ searchButton.addEventListener("click",  async () => {
     const movieInput = (searchInput.value);
     const movieSearch = movieInput.trim().replace(/\s+/g, '-').toLowerCase();
 
-    const movie_response = await fetch(`http://www.omdbapi.com/?t=${movieSearch}&apikey=${api_key}`);
+    const movie_response = await fetch(`http://www.omdbapi.com/?t=${movieSearch}&apikey=${OMDB_api_key}`);
 
     const movie_data = await movie_response.json();
 
